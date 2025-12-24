@@ -1,6 +1,10 @@
-const userInfo = ({ name, commentQuantity }) => {
-    if (!commentQuantity) return `User ${name} has no comments`; // Нет комментариев
-    return `User ${name} has ${commentQuantity} comments`;
-  };
-  const profile = { name: "Лиза", commentQuantity: 100 };
-  console.log(userInfo(profile));
+let age = 25;
+if (age > 18) {
+  console.log("Adult");
+}
+if (age >= 12 && age <= 18) {
+  console.log("Teenager");
+}
+if (age < 12) {
+  console.log("Child");
+}
