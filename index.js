@@ -1,6 +1,6 @@
-const arr = [1, 2, 3];
-arr.push(4);
-console.log(arr); // [1, 2, 3, 4]
-const removed = arr.pop();
-console.log(removed); // 4
+const arr = [2, 3];
+arr.unshift(1);
 console.log(arr); // [1, 2, 3]
+const first = arr.shift();
+console.log(first); // 1
+console.log(arr); // [2, 3]
