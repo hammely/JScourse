@@ -1,6 +1,6 @@
-const createPost = (post, createdAt = new Date()) => ({
-    ...post,
-    createdAt
-});
-const post = { id: 1, title: "News" };
-console.log(createPost(post));
+try {
+    throw new Error("Something went wrong");
+} catch (error) {
+    console.error(error.message); // Something went wrong
+}
+console.log("Code continues"); // Выполнится после обработки ошибки
