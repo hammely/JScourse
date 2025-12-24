@@ -1,12 +1,15 @@
-const post = {
-    title: 'My post',
-    likes: 5
-  };
-  
-  // Объект → JSON (строка)
-  const postString = JSON.stringify(post);
-  console.log(postString); // {"title":"My post","likes":5}
-  
-  // JSON → объект
-  const parsedPost = JSON.parse(postString);
-  console.log(parsedPost.title); // 'My post'
+// Объявляем функцию
+function applyOperation(a, b, operation) {
+  return operation(a, b); // Вызываем callback
+}
+
+// Глобальная переменная
+const multiplier = 2;
+
+// Используем всё вместе
+const total = applyOperation(5, 3, function(x, y) {
+  const result = x + y; // Локальная переменная
+  return result * multiplier; // Доступ к глобальной
+});
+
+console.log(total); // 16 = (5+3)*2
