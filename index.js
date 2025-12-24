@@ -1,4 +1,6 @@
-function multiply(value, multiplier = 1) {
-    return value * multiplier;
-}
-console.log(multiply(5)); // 5
+const createPost = (post, createdAt = new Date()) => ({
+    ...post,
+    createdAt
+});
+const post = { id: 1, title: "News" };
+console.log(createPost(post));
