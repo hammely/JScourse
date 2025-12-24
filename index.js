@@ -1,10 +1,10 @@
-let age = 25;
-if (age > 18) {
-  console.log("Adult");
-}
-if (age >= 12 && age <= 18) {
-  console.log("Teenager");
-}
-if (age < 12) {
-  console.log("Child");
-}
+function sumPositiveNums(a, b) {
+    if (typeof a !== "number" || typeof b !== "number") {
+      return "One of the arguments is not a number"; // Проверка числового формата
+    }
+    if (a <= 0 || b <= 0) { // Проверка чисел на неотрицательность 
+      return "Numbers are not positive";
+    }
+    return a + b;
+  }
+  console.log(sumPositiveNums(-10, 8)); // 11
