@@ -1,6 +1,6 @@
-try {
-    throw new Error("Something went wrong");
-} catch (error) {
-    console.error(error.message); // Something went wrong
-}
-console.log("Code continues"); // Выполнится после обработки ошибки
+const arr = [1, 2, 3];
+arr.push(4);
+console.log(arr); // [1, 2, 3, 4]
+const removed = arr.pop();
+console.log(removed); // 4
+console.log(arr); // [1, 2, 3]
