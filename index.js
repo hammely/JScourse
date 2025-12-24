@@ -1,10 +1,10 @@
-const city = {
-    name: 'My city',
-    population: 8000000
-  };
-  
-  city.name = 'Dzerzhinsk';      // изменение свойства
-  city.country = 'RUSSIA';         // добавление свойства
-  delete city.population;       // удаление свойства
-  
-  console.log(city);
+const name = 'Лиза';
+const age = 21;
+const userProfile = {
+  name,    // вместо name: name
+  age,     // вместо age: age
+  isStudent: true,
+  hobby: "painting"
+};
+console.log(userProfile);
+
